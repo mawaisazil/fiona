@@ -65,7 +65,11 @@ h1{font-size:clamp(44px,13vw,64px);line-height:.95;margin:0;letter-spacing:.5px;
 
 .ico{flex:none;width:46px;height:46px;border-radius:14px;border:3px solid #1a1033;display:grid;place-items:center;color:#fff}
 .ico svg{width:24px;height:24px;fill:currentColor}
-.tt{background:#1a1033}.ig{background:var(--pink)}.sh{background:#ff9d1c;color:#1a1033}.bk{background:var(--mint);color:#1a1033}
+.tt{background:#1a1033}.ig{background:var(--pink)}
+.sh{background:#ff9d1c;color:#1a1033}
+.bk{background:var(--mint);color:#1a1033} 
+.fb{background:#1877f2;color:#fff} 
+.sc{background:#fffc00;color:#1a1033}
 
 .btn b{display:block;font-size:21px;line-height:1.05}
 .btn small{display:block;color:var(--muted);font-weight:500;font-size:14px;margin-top:3px}
