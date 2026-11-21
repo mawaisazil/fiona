@@ -47,10 +47,7 @@ h1{font-size:clamp(44px,13vw,64px);line-height:.95;margin:0;letter-spacing:.5px;
 .ticker a:hover{color:var(--pink)}
 .foot a{color:inherit;font-weight:700}
 .ticker{overflow:hidden;margin:26px -18px 22px;background:var(--ink);color:var(--bg);border-block:4px solid var(--blue);transform:rotate(-1.5deg)}
-.ticker div{
-  display:flex;width:max-content;animation:tick 22s linear infinite;padding:9px 0;
-  font-family:"Bagel Fat One",Impact,sans-serif;font-size:20px;white-space:nowrap;
-}
+.ticker div{display:flex;width:max-content;animation:tick 22s linear infinite;padding:9px 0;font-family:"Bagel Fat One",Impact,sans-serif;font-size:20px;white-space:nowrap}
 .ticker span{padding:0 18px}
 @keyframes tick{to{transform:translateX(-50%)}}
 
@@ -62,20 +59,13 @@ h1{font-size:clamp(44px,13vw,64px);line-height:.95;margin:0;letter-spacing:.5px;
 .feature:hover{transform:translate(-2px,-2px) rotate(-.4deg)}
 
 .list{display:grid;gap:14px;padding:0;margin:0;list-style:none}
-.btn{
-  display:flex;align-items:center;gap:14px;text-decoration:none;color:var(--ink);
-  background:var(--card);border:4px solid var(--ink);border-radius:20px;padding:14px 16px;
-  box-shadow:5px 5px 0 var(--shadow);transition:transform .12s,box-shadow .12s;
-}
+.btn{display:flex;align-items:center;gap:14px;text-decoration:none;color:var(--ink);background:var(--card);border:4px solid var(--ink);border-radius:20px;padding:14px 16px;box-shadow:5px 5px 0 var(--shadow);transition:transform .12s,box-shadow .12s}
 .btn:hover{transform:translate(-2px,-2px);box-shadow:7px 7px 0 var(--shadow)}
 .btn:active{transform:translate(3px,3px);box-shadow:2px 2px 0 var(--shadow)}
 
 .ico{flex:none;width:46px;height:46px;border-radius:14px;border:3px solid #1a1033;display:grid;place-items:center;color:#fff}
 .ico svg{width:24px;height:24px;fill:currentColor}
-.tt{background:#1a1033}
-.ig{background:var(--pink)}
-.sh{background:#ff9d1c;color:#1a1033}
-.bk{background:var(--mint);color:#1a1033}
+.tt{background:#1a1033}.ig{background:var(--pink)}.sh{background:#ff9d1c;color:#1a1033}.bk{background:var(--mint);color:#1a1033}
 
 .btn b{display:block;font-size:21px;line-height:1.05}
 .btn small{display:block;color:var(--muted);font-weight:500;font-size:14px;margin-top:3px}
@@ -84,7 +74,83 @@ h1{font-size:clamp(44px,13vw,64px);line-height:.95;margin:0;letter-spacing:.5px;
 .sec{margin:34px 0 14px;font-size:26px;text-align:center}
 .foot{margin-top:38px;text-align:center;color:var(--muted);font-size:13px;line-height:1.5}
 
+/* ============ IMAGE SLIDER (horizontal scroller / polaroid) ============ */
+.slider-wrap{position:relative;margin:0 -18px}
+.slider{
+  display:flex;gap:16px;overflow-x:auto;
+  scroll-snap-type:x mandatory;scroll-behavior:smooth;
+  padding:22px 18px 26px;
+  -webkit-overflow-scrolling:touch;
+  scrollbar-width:none;-ms-overflow-style:none;
+  user-select:none;cursor:grab;
+}
+.slider::-webkit-scrollbar{display:none}
+.slider.dragging{cursor:grabbing;scroll-snap-type:none;scroll-behavior:auto}
+.slide{
+  flex:0 0 200px;scroll-snap-align:center;
+  background:var(--card);border:4px solid var(--ink);border-radius:18px;
+  box-shadow:6px 6px 0 var(--shadow);
+  padding:10px 10px 12px;margin:0;
+  transform:rotate(-2deg);transition:transform .15s;
+}
+.slide:nth-child(even){transform:rotate(2deg)}
+.slide:hover{transform:rotate(0) translateY(-2px)}
+.slide-img{
+  aspect-ratio:1/1;overflow:hidden;border-radius:10px;
+  border:3px solid var(--ink);background:var(--pink);
+}
+.slide-img img{width:100%;height:100%;object-fit:cover;display:block}
+.slide figcaption{
+  margin-top:8px;font-family:"Bagel Fat One",Impact,sans-serif;
+  font-size:15px;line-height:1.1;text-align:center;color:var(--ink);
+  min-height:2.2em;
+}
+.slider-btn{
+  position:absolute;top:50%;transform:translateY(-50%);
+  width:44px;height:44px;border-radius:50%;
+  background:var(--card);color:var(--ink);
+  border:3px solid var(--ink);box-shadow:3px 3px 0 var(--shadow);
+  cursor:pointer;font:700 22px/1 "DM Sans",sans-serif;
+  display:grid;place-items:center;z-index:2;
+}
+.slider-btn:active{transform:translateY(-50%) translate(2px,2px);box-shadow:1px 1px 0 var(--shadow)}
+.slider-btn.prev{left:2px}
+.slider-btn.next{right:2px}
+.slider-hint{text-align:center;color:var(--muted);font-size:13px;margin:2px 0 0}
+@media (min-width:520px){.slide{flex-basis:220px}}
+@media (max-width:479px){.slider-btn{display:none}}
+
+/* ============ OFFER CARDS (sticker grid) ============ */
+.offers{
+  display:grid;grid-template-columns:1fr 1fr;gap:14px;
+  padding:8px 0 0;margin:0;list-style:none;
+}
+.offer{
+  position:relative;display:block;text-decoration:none;color:var(--ink);
+  background:var(--card);border:4px solid var(--ink);border-radius:20px;
+  padding:18px 14px 14px;box-shadow:5px 5px 0 var(--shadow);
+  transition:transform .12s,box-shadow .12s;
+  transform:rotate(-1deg);
+}
+.offer:nth-child(even){transform:rotate(1deg)}
+.offer:hover{transform:rotate(0) translate(-2px,-2px);box-shadow:7px 7px 0 var(--shadow)}
+.offer:active{transform:translate(3px,3px);box-shadow:2px 2px 0 var(--shadow)}
+.offer h3{font-family:"Bagel Fat One",Impact,sans-serif;font-weight:400;font-size:24px;line-height:1;margin:0 0 6px}
+.offer p{font-size:14px;line-height:1.35;color:var(--muted);margin:0 0 12px;font-weight:500}
+.offer .offer-link{font-weight:700;font-size:14px;color:var(--ink)}
+.offer-badge{
+  position:absolute;top:-12px;right:10px;
+  background:var(--pink);color:#fff;
+  border:3px solid var(--ink);border-radius:10px;
+  padding:2px 8px;font-weight:700;font-size:12px;
+  transform:rotate(5deg);
+}
+.offer-badge.mint{background:var(--mint);color:var(--ink)}
+.offer-badge.blue{background:var(--blue);color:#fff}
+.offer-badge.orange{background:#ff9d1c;color:var(--ink)}
+@media (max-width:359px){.offers{grid-template-columns:1fr}}
+
 @media (prefers-reduced-motion:reduce){
   .ticker div,.avatar{animation:none}
-  .btn,.feature{transition:none}
+  .btn,.feature,.slide,.offer{transition:none}
 }
