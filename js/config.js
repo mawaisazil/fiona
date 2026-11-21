@@ -13,9 +13,8 @@ var CONFIG = {
   /* Saare links. Jo khali "" hai wo dead button banega. */
   links: {
     tiktok:    "https://www.tiktok.com/@fionacauley",
-    instagram: "",                                  // e.g. "https://www.instagram.com/fionacauley"
+    instagram: "https://www.instagram.com/fionacauley",                                  // e.g. "https://www.instagram.com/fionacauley"
     cameo:     "https://www.cameo.com/fionacauley",
-    tickets:   "",                                  // e.g. "https://www.ticketmaster.com/fiona-cauley"
     email:     "mailto:booking@example.com",         // apna email daalo
     youtube:   "https://www.youtube.com/@fionacauley",
   }
