@@ -22,7 +22,7 @@ var CONFIG = {
      src ko "images/show-01.jpg" etc. se replace kar de. */
   slider: {
     images: [
-      { src: "https://picsum.photos/seed/fiona01/400/400", caption: "Live in Manchester" },
+      { src: "favicon.webp", caption: "Talking Shit" },
       { src: "https://picsum.photos/seed/fiona02/400/400", caption: "SOLD OUT — London" },
       { src: "https://picsum.photos/seed/fiona03/400/400", caption: "Leeds comedy club" },
       { src: "https://picsum.photos/seed/fiona04/400/400", caption: "Glasgow, night 2" },
