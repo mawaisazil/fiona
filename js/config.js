@@ -7,11 +7,11 @@ var CONFIG = {
 
   links: {
     tiktok:    "https://www.tiktok.com/@fionacauley",
-    instagram: "",
+    instagram: "https://www.instagram.com/fionacauley",
     cameo:     "https://www.cameo.com/fionacauley",
     tickets:   "",
     email:     "mailto:booking@example.com",
-    youtube:   "https://www.youtube.com"
+    youtube:   "https://www.youtube.com/@fionacauley"
   },
 
   /* ---- Image slider ----
