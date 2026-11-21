@@ -22,18 +22,18 @@ var CONFIG = {
      src ko "images/show-01.jpg" etc. se replace kar de. */
   slider: {
     images: [
-      { src: "favicon.webp", caption: "Talking Shit" },
-      { src: "https://picsum.photos/seed/fiona02/400/400", caption: "SOLD OUT — London" },
-      { src: "https://picsum.photos/seed/fiona03/400/400", caption: "Leeds comedy club" },
-      { src: "https://picsum.photos/seed/fiona04/400/400", caption: "Glasgow, night 2" },
-      { src: "https://picsum.photos/seed/fiona05/400/400", caption: "Birmingham" },
-      { src: "https://picsum.photos/seed/fiona06/400/400", caption: "Bristol — encore" },
-      { src: "https://picsum.photos/seed/fiona07/400/400", caption: "Dublin crowd" },
-      { src: "https://picsum.photos/seed/fiona08/400/400", caption: "Cardiff" },
-      { src: "https://picsum.photos/seed/fiona09/400/400", caption: "Liverpool" },
-      { src: "https://picsum.photos/seed/fiona10/400/400", caption: "Newcastle" },
-      { src: "https://picsum.photos/seed/fiona11/400/400", caption: "Sheffield" },
-      { src: "https://picsum.photos/seed/fiona12/400/400", caption: "On the road" }
+      { src: "slider1.jpg", caption: "Judge Judy" },
+      { src: "slider2.jpg", caption: "Talking Judge" },
+      { src: "slider3.jpg", caption: "Kim Impossible" },
+      { src: "slider4.jpg", caption: "Love you New York" },
+      { src: "slider5.jpg", caption: "I’m 30" },
+      { src: "slider6.jpg", caption: "Just hit 700k!" },
+      { src: "slider7.jpg", caption: "Big ole @netflixisajoke dump" },
+      { src: "slider8.jpg", caption: "I love LA" },
+      { src: "slider9.jpg", caption: "My lucky charm 🍀" },
+      { src: "slider10.jpg", caption: "Learned a TON" },
+      { src: "slider11.jpg", caption: "AUSTIN YOU’RE THE BEST!!" },
+      { src: "slider12.jpg", caption: "I’ll see yall next year 😘" }
     ]
   },
 
