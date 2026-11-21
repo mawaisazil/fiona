@@ -2,20 +2,47 @@
    EDIT AREA — sirf yahan changes karo
    =========================================================== */
 var CONFIG = {
-  /* Avatar photo:
-     "" = FC sticker dikhega
-     "images/fiona.jpg" = local file (images folder mein rakho)
-     "https://..." = online URL
-  */
-  avatar: "https://punchup.live/_next/image?url=https%3A%2F%2Fimagedelivery.net%2F7Ze32-hXUdrEDVtqvlbDMQ%2F3edd5d5d-0978-4b4f-5233-60924bebb900%2Fpublic&w=384&q=75&dpl=dpl_DVkwZkhaDY6MVf3U58CnVSfNTx8X",
+  avatar: "",                      /* "images/fiona.jpg" ya URL. "" = FC sticker */
   avatarAlt: "Fiona Cauley",
 
-  /* Saare links. Jo khali "" hai wo dead button banega. */
   links: {
     tiktok:    "https://www.tiktok.com/@fionacauley",
-    instagram: "https://www.instagram.com/fionacauley",                                  // e.g. "https://www.instagram.com/fionacauley"
+    instagram: "",
     cameo:     "https://www.cameo.com/fionacauley",
-    email:     "mailto:booking@example.com",         // apna email daalo
-    youtube:   "https://www.youtube.com/@fionacauley",
-  }
+    tickets:   "",
+    email:     "mailto:booking@example.com",
+    youtube:   "https://www.youtube.com"
+  },
+
+  /* ---- Image slider ----
+     Har item: { src: "...", caption: "..." }
+     Neeche demo images hain. Apni photos lagane ke liye
+     src ko "images/show-01.jpg" etc. se replace kar de. */
+  slider: {
+    images: [
+      { src: "https://picsum.photos/seed/fiona01/400/400", caption: "Live in Manchester" },
+      { src: "https://picsum.photos/seed/fiona02/400/400", caption: "SOLD OUT — London" },
+      { src: "https://picsum.photos/seed/fiona03/400/400", caption: "Leeds comedy club" },
+      { src: "https://picsum.photos/seed/fiona04/400/400", caption: "Glasgow, night 2" },
+      { src: "https://picsum.photos/seed/fiona05/400/400", caption: "Birmingham" },
+      { src: "https://picsum.photos/seed/fiona06/400/400", caption: "Bristol — encore" },
+      { src: "https://picsum.photos/seed/fiona07/400/400", caption: "Dublin crowd" },
+      { src: "https://picsum.photos/seed/fiona08/400/400", caption: "Cardiff" },
+      { src: "https://picsum.photos/seed/fiona09/400/400", caption: "Liverpool" },
+      { src: "https://picsum.photos/seed/fiona10/400/400", caption: "Newcastle" },
+      { src: "https://picsum.photos/seed/fiona11/400/400", caption: "Sheffield" },
+      { src: "https://picsum.photos/seed/fiona12/400/400", caption: "On the road" }
+    ]
+  },
+
+  /* ---- Offer cards ----
+     title, text, badge (ya "" agar nahi chahiye),
+     badgeClass: "" (pink) | "mint" | "blue" | "orange"
+     link: CONFIG.links ki koi key (jaise "tickets") */
+  offers: [
+    { title: "2 for 1",   text: "Bring a friend, pay for one",         badge: "HOT",   badgeClass: "",       link: "tickets" },
+    { title: "Group 5+",  text: "20% off when you bring the crew",     badge: "GROUP", badgeClass: "mint",   link: "tickets" },
+    { title: "Early bird",text: "First 50 tickets, cheaper price",     badge: "NEW",   badgeClass: "blue",   link: "tickets" },
+    { title: "Student",   text: "Show your ID at the door",            badge: "",      badgeClass: "",       link: "tickets" }
+  ]
 };
