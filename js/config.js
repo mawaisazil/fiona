@@ -16,6 +16,7 @@ var CONFIG = {
     instagram: "",                                  // e.g. "https://www.instagram.com/fionacauley"
     cameo:     "https://www.cameo.com/fionacauley",
     tickets:   "",                                  // e.g. "https://www.ticketmaster.com/fiona-cauley"
-    email:     "mailto:booking@example.com"         // apna email daalo
+    email:     "mailto:booking@example.com",         // apna email daalo
+    youtube:   "https://www.youtube.com/@fionacauley",
   }
 };
