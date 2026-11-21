@@ -9,11 +9,12 @@ var CONFIG = {
     tiktok:    "https://www.tiktok.com/@fionacauley",
     instagram: "https://www.instagram.com/fionacauley",
     cameo:     "https://www.cameo.com/fionacauley",
-    tickets:   "",
-    email:     "mailto:booking@example.com",
+    tickets:   "#",
+    email:     "#",
     youtube:   "https://www.youtube.com/@fionacauley",
-    facebook:  "https://www.facebook.com/fionacauley", 
-    snapchat:  "https://www.snapchat.com/add/fionacauley", 
+    facebook:  "#", 
+    snapchat:  "#", 
+    podcast:   "https://podcasts.apple.com/us/podcast/talking-shit-with-fiona-cauley/id6833688452"
   },
 
   /* ---- Image slider ----
