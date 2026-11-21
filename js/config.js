@@ -11,7 +11,9 @@ var CONFIG = {
     cameo:     "https://www.cameo.com/fionacauley",
     tickets:   "",
     email:     "mailto:booking@example.com",
-    youtube:   "https://www.youtube.com/@fionacauley"
+    youtube:   "https://www.youtube.com/@fionacauley",
+    facebook:  "https://www.facebook.com/fionacauley", 
+    snapchat:  "https://www.snapchat.com/add/fionacauley", 
   },
 
   /* ---- Image slider ----
