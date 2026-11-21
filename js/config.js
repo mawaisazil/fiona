@@ -2,7 +2,7 @@
    EDIT AREA — sirf yahan changes karo
    =========================================================== */
 var CONFIG = {
-  avatar: "",                      /* "images/fiona.jpg" ya URL. "" = FC sticker */
+  avatar: "https://tse1.explicit.bing.net/th/id/OIP.E7Y4x-ZLvCZMPgzOImdagQHaJQ?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",                      /* "images/fiona.jpg" ya URL. "" = FC sticker */
   avatarAlt: "Fiona Cauley",
 
   links: {
