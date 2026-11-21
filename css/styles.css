@@ -158,3 +158,67 @@ h1{font-size:clamp(44px,13vw,64px);line-height:.95;margin:0;letter-spacing:.5px;
   .ticker div,.avatar{animation:none}
   .btn,.feature,.slide,.offer{transition:none}
 }
+
+/* ============ PODCAST CARD (highlight) ============ */
+.podcast-card{
+  display:block;text-decoration:none;color:#fff;
+  background:linear-gradient(135deg, #7b1fa2 0%, #5b0f8a 100%);
+  border:4px solid var(--ink);border-radius:26px;
+  padding:24px 20px 22px;box-shadow:7px 7px 0 var(--shadow);
+  position:relative;margin-bottom:8px;
+  transition:transform .12s,box-shadow .12s;
+}
+.podcast-card:hover{
+  transform:translate(-2px,-2px) rotate(-.4deg);
+  box-shadow:9px 9px 0 var(--shadow);
+}
+.podcast-card:active{
+  transform:translate(3px,3px);
+  box-shadow:3px 3px 0 var(--shadow);
+}
+
+.podcast-badge{
+  position:absolute;top:-16px;left:16px;
+  background:#fffc00;color:#1a1033;
+  border:3px solid var(--ink);border-radius:12px;
+  padding:4px 12px;font-weight:700;font-size:13px;
+  transform:rotate(-4deg);
+  animation:pulse-badge 2.2s ease-in-out infinite;
+}
+@keyframes pulse-badge{
+  0%,100%{transform:rotate(-4deg) scale(1)}
+  50%   {transform:rotate(-4deg) scale(1.06)}
+}
+
+.podcast-row{display:flex;align-items:center;gap:14px;margin-bottom:14px}
+.podcast-icon{
+  flex:none;width:60px;height:60px;
+  background:#fff;color:#7b1fa2;
+  border:3px solid var(--ink);border-radius:16px;
+  display:grid;place-items:center;
+  box-shadow:3px 3px 0 rgba(0,0,0,.35);
+}
+.podcast-icon svg{width:30px;height:30px;fill:currentColor}
+
+.podcast-copy h3{
+  font-family:"Bagel Fat One",Impact,sans-serif;
+  font-weight:400;font-size:28px;line-height:1;
+  margin:0 0 4px;color:#fff;
+  text-shadow:3px 3px 0 var(--pink);
+}
+.podcast-copy p{
+  margin:0;font-size:14px;color:#e8d9ff;font-weight:700;
+  letter-spacing:.3px;
+}
+
+.podcast-desc{
+  margin:0 0 16px;font-size:15px;line-height:1.45;
+  color:#f0e6ff;font-weight:500;
+}
+
+.podcast-go{
+  display:inline-block;
+  background:#fffc00;color:#1a1033;font-weight:700;
+  border:3px solid #1a1033;border-radius:999px;
+  padding:9px 18px;font-size:15px;
+}
